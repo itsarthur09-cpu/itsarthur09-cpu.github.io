@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itsarthur09-cpu | Kişisel Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            display: inline-block;
+            animation: wave 1.8s infinite;
+        }
+
+        p {
+            font-size: 1.4rem;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(20deg); }
+            75% { transform: rotate(-15deg); }
+        }
+
+        /* Mobil uyum */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.6rem;
+            }
+            p {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Merhaba <span>👋</span></h1>
+        <p>Bu benim GitHub Pages sitem.</p>
+        <div class="badge">itsarthur09-cpu</div>
+    </div>
+</body>
+</html>
